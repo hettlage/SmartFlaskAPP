@@ -11,7 +11,7 @@ pipeline {
     stage("Unit tests") {
       steps {
         echo "Unit tests"
-        sh 'bash test.sh'
+        sh 'bash jenkinsscript.sh'
       }
     }
     stage("Publish JUnit report") {
